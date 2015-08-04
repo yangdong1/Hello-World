@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>宜人贷-会员登录</title>
+    <!--[if IE]>
+    <script src="html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/DL.css"/>
+</head>
+<body class="bg">
+<!--页面头部 -->
+<div class="header">
+    <div class="header_top">
+        <div class="innerbox">
+            <ul class="header_contact">
+                <li class="header-yixin">
+                    <a href="#"  target="_blank" title="宜信官网">宜信官网</a>
+                </li>
+                <li class="header-ico-app">
+                    <a href="#" target="_blank">手机宜人贷</a>
+                </li>
+                <li class="header-ico-tel">
+                    <a href="#"></a>
+                </li>
+            </ul>
+
+            <ul class="header_login">
+                <li>
+                    <span>您好！欢迎来到宜人贷！</span>
+                    <a href="#">登录</a>
+                </li>
+                <li class="gray">|</li>
+                <li><a href="#" class="orange">快速注册</a></li>
+                <li class="gray">|</li>
+                <li class="guide">
+                    <span class="guideLink">新手引导</span> </li>
+                <li  class="gray">|</li>
+                <li><span>帮助中心</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <a href="#" class="logo" style="position:relative;"></a>
+        <a href="#" style="float:left;display:block;margin-top:20px;">
+            <img src="images/3year.gif" alt="3周年"/>
+        </a>
+
+        <ul class="nav">
+            <li><a href="yirendai.html" class="live">首页</a></li>
+            <li><a href="chujie.html">我要出借</a></li>
+            <li><a href="#">我要借款</a></li>
+            <li><a href="#">安全保障</a></li>
+            <li><a href="#">手机客户端</a></li>
+            <li><a href="#">宜人问答</a></li>
+        </ul>
+    </div>
+</div>
+<!--页面头部结束-->
+<!--页面登录区-->
+<div class="full_container reglog"  >
+    <h1 style="margin-top:10px ">
+        登录宜信通行证
+    </h1>
+    <div class="clearfix ">
+        <div class="l reglogForm " style="width: 660px">
+            <form class="login_from" action="https://p.yixin.com/dologin.jhtml" method="post" name="theform" id="theform">
+                <input type="hidden" name="fromSite" id="fromSite" value="YRD">
+                <div class="m-row">
+                    <label class="l m-rowLabel" for="username">账户：
+                    </label>
+                    <div class="l m-holderBox">
+                        <label class="m-holderTxt" style="height: 34px; line-height: 34px; display: block;">
+                            请输入邮箱/手机号
+                        </label>
+                        <input class="m-holderInput m-textFocus png" id="username" name="username" type="text" autofocus >
+                    </div>
+                </div>
+                <div class="m-row-error s_nick_user" style="margin-bottom: 50px">
+                </div>
+                <div class="m-row" style="height: 50px">
+                    <label class="l m-rowLabel" for="password">
+                        密码：
+                    </label>
+                    <div class="l m-holderBox">
+                        <label class="m-holderTxt" for="password" style="height: 34px; line-height: 34px; display: block;">
+                            请输入密码
+                        </label>
+                        <input class="m-holderInput m-textFocus png" name="password" id="password" type="password" autocomplete="off">
+                    </div>
+                </div>
+                <div class="m-row-error s_user_pwd1"></div>
+                <div class="m-row">
+                    <label class="l m-rowLabel" for="srand">
+                        验证码：
+                    </label>
+                    <div class="l m-holderBox" style="width:115px;">
+                        <label class="m-holderTxt" for="srand" style="height: 34px; line-height: 34px;">
+                            请输入验证码
+                        </label>
+                        <input class="m-holderInput m-textFocus png" name="authcode" type="text" id="authcode" style="width:100px;" maxlength="4">
+                    </div>
+                    <img class="validate" src="https://p.yixin.com/randomCode?t=" +math.random();="" title="点击图片刷新验证码" onclick="change_rand();" name="srand">
+                    <input type="hidden" id="passport_url" value="https://p.yixin.com">
+                    <a class="space_mr" href="javascript:change_rand();">看不清？换图片</a>
+                </div>
+                <div class="m-row-error s_srand">
+
+                </div>
+                <div class="m-row">
+                    <label class="l m-rowLabel" ></label>
+                    <div class="l m-holderBox clearfix" style="margin-left:120px;
+                    margin-bottom:10px;padding-top:8px">
+                        <a href="javascript:void(0);" class="m-checkbox l" style="margin-right: 10px;margin-top:2px">
+                            <input type="hidden" id="rememberMe" name="rememberMe" class="m-checkboxHid" value="0" data="0">
+                        </a>
+                        <label class="l rowLabel">记住用户名</label>
+                        <a href="/password/retrieve/home" class="r">忘记密码</a>
+                    </div>
+                </div>
+                <div class="m-row">
+                    <input type="submit" class="input_btn btn_blue" value="立即登录" style="width:280px;margin-left:120px">
+                </div>
+            </form>
+        </div>
+        <div class="l reglogAside" style="margin-left:40px ">
+            <h3 style="margin-bottom: 30px">还没有宜信通行证？</h3>
+            <a class="input_btn btn_blue" style="width:135px" rel="nofollow" href="/auth/regist/home">
+                立即注册
+            </a>
+            <a target="_blank" href="#" style="background:url('images/toMPic04.png') no-repeat center top;width:198px;height:206px;display:block;margin-top:20px;"></a>
+        </div>
+    </div>
+</div>
+<!--页面登录区结束-->
+<!--页脚 -->
+<div class="footer">
+    <p class="footer_link innerbox">
+        <a rel="nofollow" title="" href="http://www.yirendai.com/about/">关于我们</a>|
+        <a rel="nofollow" title="" href="http://www.yirendai.com/support/">帮助中心</a>|
+        <a target="_blank" rel="nofollow" href="http://www.yirendai.com/contactus/">联系我们</a>|
+        <a title="" rel="nofollow" target="_blank" href="#">宜人问答</a>|
+        <a title="" rel="nofollow" target="_blank" href="http://www.yirendai.com/entry/agreement/">网站协议</a>|
+        <a target="_blank" rel="nofollow" href="http://www.yirendai.com/entry/mapsite/">网站地图</a>|
+        <a target="_blank" rel="nofollow" href="http://www.yirendai.com/entry/feedback/"> 意见反馈</a>|
+        <a target="_blank" rel="nofollow" href="http://www.yirendai.com/flink/">友情链接</a>|
+        <span class="footer_tel"></span>
+    </p>
+    <p class="footer_cont innerbox">京ICP备15002532号 CreditEase 2012-2015  恒诚科技发展（北京）有限公司</p>
+    <p class="footer_banner innerbox">
+        <a rel="nofollow" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1745462242" target="_blank">
+            <img width="121" height="47" src="images/zzrz01.jpg" alt="中国互联网协会">
+        </a>
+        <a rel="nofollow" href="http://net.china.cn/chinese/index.htm" target="_blank">
+            <img width="121" height="47" src="images/zzrz03.jpg" alt="不良信息举报中心">
+        </a>
+        <script src="http://kxlogo.knet.cn/seallogo.dll?sn=e13010711010038449j2p4000000&amp;size=0"></script><span style="display:inline-block;position:relative;width:auto;"><a href="https://ss.knet.cn/verifyseal.dll?sn=e13010711010038449j2p4000000&amp;ct=df&amp;a=1&amp;pa=0.482569188112393" id="kx_verify" tabindex="-1" target="_blank" kx_type="图标式" style="display:inline-block;"><img src="http://rr.knet.cn/static/images/logo/cnnic.png" style="border:none;" oncontextmenu="return false;" alt="可信网站"></a></span>
+    </p>
+</div>
+<!--页脚结束-->
+
+
+</body>
+</html>
