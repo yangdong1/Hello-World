@@ -1,0 +1,159 @@
+/*兼容IE7 8 */
+article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font: inherit;
+}
+body{
+    background-color:#ffffff;
+    font: 14px 微软雅黑 黑体，Verdana,Arial;
+    color: #333333;
+    border-top: 8px solid #006f47;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*头部*/
+.wrap{
+   width: 960px;
+   margin: 0 auto;
+}
+.top-header{
+    height: 120px;
+}
+.top-header .logo{
+    float: left;
+   height: 80px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.top-menu{
+    float: left;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.top-menu ul li{
+    /*display: inline-block;*/
+    float: left;/*IE对inline-block不好使*/
+    background-color: #efe5d0;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+.top-menu ul li.selected{
+    background-color: #c8b99c;
+}
+.top-menu ul li a {
+    color: #006f47;
+    font-weight: bold;
+}
+
+
+/*侧边栏*/
+.left-aside{
+    float: left;
+  width: 350px;
+
+}
+.left-aside section{
+    background: url("images/background.gif") top left repeat;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.left-aside section h3{
+    color: #006f47;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/*开启您的星享之旅*/
+.news p {
+    line-height: 1.8em;
+}
+.news p a{
+    color: #006f47;
+}
+
+/*饮品*/
+.drinks figure{
+    float: left;
+    margin-bottom: 10px;
+}
+.drinks figure.figure-r{
+    margin-left: 20px;
+}
+.drinks figure img{
+    width: 141px;
+    height: 158px;
+    border: 2px solid #ffffff;
+}
+.drinks figure figcaption{
+    text-align: center;
+}
+.clear{
+clear: both;
+}
+/*主内容区*/
+main{
+    background: url("images/background.gif") top left repeat;
+    width: 560px;
+    float: left;
+    margin-left: 10px;
+    padding: 20px;
+}
+main article .article{
+    border-bottom: 1px dashed #c8b99c;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+main article.comment{
+    border-top: 1px dashed  #c8b99c;
+    margin-top: 10px;
+    padding: 10px;
+}
+main article h3{
+    color: #006f47;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+main article time{
+    color: #675747;
+    font-size: 0.9em;
+}
+main article .author{
+    color: #675747;
+    float: right;
+    margin-right: 20px;
+}
+main article p{
+    line-height: 1.5em;
+    text-indent: 2em;
+    margin: 5px 0;
+}
+main article b{
+    font-weight: bold;
+    color: #1D1B17;
+}
+main article small{
+    font-size: 0.8em;
+    color: #808080;
+}
+main article footer{
+    text-align: right;
+    font-size: 0.8em;
+}
+
+/*页脚*/
+.page-footer{
+    margin-top:10px;
+    padding:15px;
+    background-color: #84765B;
+    color: #F2FFF8;
+    text-align: center;
+    font-size: 90%;
+    clear: both;
+}

@@ -1,0 +1,105 @@
+/*兼容IE7 8 */
+article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font: inherit;
+}
+body{
+    background-color:#ffffff;
+    font: 14px 微软雅黑 黑体，Verdana,Arial;
+    color: #333333;
+    border-top: 8px solid #006f47;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*头部*/
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+}
+.top-header{
+    height: 120px;
+}
+.top-header .logo{
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.top-menu{
+    float: left;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.top-menu ul li{
+    /*display: inline-block;*/
+    float: left;/*IE对inline-block不好使*/
+    background-color: #efe5d0;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+.top-menu ul li.selected{
+    background-color: #c8b99c;
+}
+.top-menu ul li a {
+    color: #006f47;
+    font-weight: bold;
+}
+
+.main{
+    width: 900px;
+    margin:0 auto;
+    background: url("images/background.gif") 0 0 repeat;
+}
+
+.h h2{
+    color: #006f47;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+}
+
+p{
+  text-align: right;
+}
+.form{
+
+    display:table;
+    margin: 0 auto;
+}
+
+.input{
+    display: table-cell;
+    border-spacing: 3px;
+    border-color: #006f47;
+    vertical-align: top;
+    padding: 10px;
+}
+.row{
+    display: table-row;
+   text-align: left;
+}
+
+.input .comments{
+    padding: 3px;
+    vertical-align: top;
+}
+.input textarea{
+    resize: none;
+}
+.su{
+    text-align: center;
+    font-weight: bold;
+}
+.footer{
+    background-color: #84765B;
+}

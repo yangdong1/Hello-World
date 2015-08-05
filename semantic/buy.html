@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+<!--[if IE]>
+    <script src="html5.js"></script>
+<![endif]-->
+    <link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<body>
+<div class="wrap">
+    <header class="top-header">
+        <img  class="logo" src="images/logo.gif" alt="星巴克"/>
+        <nav class="top-menu">
+            <ul>
+                <li class="selected"><a href="home.html">主页</a></li>
+                <li><a href="#" title="咖啡及文化">咖啡及文化</a></li>
+                <li><a href="#" title="饮品及美食">饮品及美食</a></li>
+                <li><a href="#" title="星享俱乐部">星享俱乐部</a></li>
+                <li><a href="#" title="在线订购">在线订购</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="main">
+
+<form action="form.html">
+    <div class="h">
+    <h2>订购星巴克咖啡豆</h2>
+    </div>
+    <div class="form">
+        <div class="row">
+        <div class="input"><p>你喜欢的咖啡豆品种：</p></div>
+        <div class="input">
+            <input type="text"  list="b" />
+            <datalist id="b">
+                <option value="guge">
+                <option value="fivefox">
+            </datalist>
+        </div>
+    </div>
+
+        <div class="row">
+        <div class="input"><p>类型:</p> </div>
+        <div class="input">
+            <input type="radio" name="a"/>咖啡豆
+            <input type="radio" name="a"/>咖啡粉
+        </div>
+        </div>
+        <div class="row">
+        <div class="input"><p>数量 <small>（袋）</small>：</p></div>
+        <div class="input"><input type="text" min="1" max="5"/></div>
+        </div>
+
+        <div class="row">
+        <div class="input"><p>期望送货日期：</p></div>
+        <div class="input"><input type="month"/></div>
+        </div>
+
+        <div class="row">
+        <div class="input"><p>附加服务</p></div>
+        <div class="input">
+            <input type="checkbox"/>礼品包装
+            <input type="checkbox"/>商品目录</div>
+        </div>
+
+        <div class="row"><p>邮寄地址</p></div>
+
+        <div class="row">
+        <div class="input"><p>姓名：</p></div>
+        <div class="input"> <input type="text" placeholder="请输入收货人姓名" /></div>
+        </div>
+
+        <div class="row">
+        <div class="input"><p>详细地址：</p></div>
+        <div class="input"><input type="text" placeholder="请输入详细收货地址"/></div>
+        </div>
+
+        <div class="row">
+        <div class="input"><p>邮编:</p></div>
+        <div class="input"><input type="text" required pattern="[0-9]{8}" placeholder="请输入邮编"/></div>
+        </div>
+
+        <div class="row">
+        <div class="input"><p>联系电话:</p></div>
+        <div class="input"><input type="text" pattern="(1[0-9] {10})|([0-9] {8})" placeholder="请输入收货人手机号"/></div>
+        </div>
+
+        <div class="row">
+        <div class="input"><label class="comments"><p>留言:</p></label></div>
+        <div class="input"><textarea  id="comments" cols="23" rows="3"></textarea></div>
+        </div>
+    </div>
+</form>
+
+    <div class="su">
+        <input type="submit" value="在线订购"/>
+    </div>
+
+<footer class="page-footer">
+    © 2015 Starbucks Corporation. All rights reserved.沪ICP备09020061号
+</footer>
+</body>
+</html>
