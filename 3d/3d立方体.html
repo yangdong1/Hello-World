@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #view{
+            perspective: 500px;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            perspective-origin: 250px -50px;
+        }
+
+        @-webkit-keyframes cube {
+            100%{transform: rotate3d(1,1,1,360deg);}
+        }
+        #cube{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            -webkit-animation: cube 1s linear 7s both infinite;
+
+        }
+
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: #6fff25;
+            border: 1px solid #000000;
+            font-size: 150px;
+            text-align: center;
+            opacity: 0.5;
+            position: absolute;
+        }
+
+        @-webkit-keyframes  item1 {
+            100%{transform: rotateY(-90deg);}
+        }
+        #item1{
+            z-index: 6;
+            transform-origin: left;
+            -webkit-animation: item1 1s linear 1s both;
+        }
+
+        @-webkit-keyframes item2 {
+            100%{transform: rotateY(90deg);}
+        }
+        #item2{
+            z-index: 5;
+            transform-origin: right;
+            -webkit-animation: item2 1s linear 2s both;
+        }
+
+        @-webkit-keyframes item3 {
+            100%{transform: rotateX(90deg);}
+        }
+        #item3{
+            z-index: 4;
+            transform-origin: top;
+            -webkit-animation: item3 1s linear 3s both;
+
+        }
+
+        @-webkit-keyframes item4 {
+            100%{transform: rotateX(-90deg);}
+        }
+        #item4{
+            z-index: 3;
+            transform-origin: bottom;
+            -webkit-animation: item4 1s linear 4s both;
+        }
+
+        @-webkit-keyframes item5 {
+            100%{transform: translateZ(200px);}
+        }
+        #item5{
+            z-index: 2;
+            -webkit-animation: item5 1s linear 5s both;
+        }
+
+        @-webkit-keyframes item6 {
+            100%{transform: rotateY(180deg);}
+        }
+        #item6{
+            z-index: 1;
+            -webkit-animation: item6 1s linear 6s both;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!--div#view>div#cube>div.item#item$*6>{$}-->
+<div id="view">
+    <div id="cube">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+        <div class="item" id="item6">6</div>
+    </div>
+</div>
+</body>
+</html>
